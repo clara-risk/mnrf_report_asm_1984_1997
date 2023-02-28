@@ -103,7 +103,7 @@ html *
 <h2 style="font-family:roboto">Year</h2>
 <label id="month"></label>
 <div>
-<input type="range" class="slider1" min="0" max="7" step="1" value="0" id="slider" style="font-family:roboto">
+<input type="range" class="slider1" min="0" max="13" step="1" value="0" id="slider" style="font-family:roboto">
 </div>
 </div>
 
@@ -149,7 +149,7 @@ const years = [
  
 function filterBy(y) {
 console.log(years[y]);
-const filters = ['==', 'YEAR', years[y]];
+const filters = ['==', 'Year', years[y]];
 map.setFilter('dam', filters);
  
 document.getElementById('month').textContent = String(years[y]);
